@@ -6,14 +6,14 @@ import styles from './NavBar.module.css'
 
 const NavBar = () => {
    return (
-      <div>
+      <div className={styles["container-navbar"]}>
          <nav>
             <ul>
                <li>
-                  <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : '')}>Login</NavLink>
+                  <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : styles.navLink)}>Login</NavLink>
                </li>
                <li>
-                  <NavLink to="/register" className={({ isActive }) => (isActive ? styles.active : '')}>Register</NavLink>
+                  <NavLink to="/register" className={({ isActive }) => (isActive ? styles.active : styles.navLink)}>Register</NavLink>
                </li>
             </ul>
          </nav>
